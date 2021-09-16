@@ -63,24 +63,46 @@ p.interesting {
     border-color: black;
 }
 
+p.dellimg {
+    background-image: url("../images/delllogo.jpg");
+    background-size: cover;
+    background-color: black;
+}
+
 /*
 applies the colored borders for the table
 */
 table, th{
-    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 26%;
     border: 2px solid red;
+    position: sticky;
+    left: 37%;
 }
 
 td {
     border: 2px solid orange;
-    color: white;
+    color: rgb(0, 0, 0);
     opacity: 1;
+}
+
+td.title {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 /*
 makes the table name colorful
 https://w3bits.com/rainbow-text/
 */
 p.t {
-    background-image: linear-gradient(red, purple, orange); -webkit-background-clip: text;
+    background-image: linear-gradient(rgb(255, 215, 215), rgb(247, 167, 247), rgb(255, 231, 185)); -webkit-background-clip: text;
     color: transparent;
+}
+
+/*
+image styling, so it wont take up the whole page
+*/
+img {
+    max-width: 100%;
+    height: auto;
 }
