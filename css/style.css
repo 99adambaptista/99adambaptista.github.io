@@ -1,0 +1,108 @@
+/*
+For the header, makes it italicised, black, and centered horizontally
+*/
+h1.a {
+    font-style: italic;
+    color: black;
+    text-align: center;
+}
+
+/*
+uses an image from the "images" folder as the background
+centers the image and covers it, also non-repeating
+*/
+body {
+    background-image: url("../images/IMG_20210817_142904.jpg");
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*
+styling for the buttons at the top of the page
+*/
+input.styled {
+    background-color: skyblue;
+    text-align: center;
+    padding: 10px 10%;
+    border: none;
+}
+input.styled:hover {
+    background-color: rgb(128, 198, 255);
+    border: none;
+}
+input.styled:active {
+    background-color: rgb(103, 141, 255);
+    border: none;
+}
+input.position1 {
+    position: sticky;
+    left:0%;
+}
+input.position2 {
+    position: sticky;
+    left:25%;
+}
+input.position3 {
+    position: sticky;
+    left:50%;
+}
+input.position4 {
+    position: sticky;
+    left:75%;
+}
+
+/*
+Green background for easier reading
+*/
+p.interesting {
+    background-color: rgb(46, 139, 87, 0.50);
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+p.dellimg {
+    background-image: url("../images/delllogo.jpg");
+    background-size: cover;
+    background-color: black;
+}
+
+/*
+applies the colored borders for the table
+*/
+table, th{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 26%;
+    border: 2px solid red;
+    position: sticky;
+    left: 37%;
+}
+
+td {
+    border: 2px solid orange;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+}
+
+td.title {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+/*
+makes the table name colorful
+https://w3bits.com/rainbow-text/
+*/
+p.t {
+    background-image: linear-gradient(rgb(255, 215, 215), rgb(247, 167, 247), rgb(255, 231, 185)); -webkit-background-clip: text;
+    color: transparent;
+}
+
+/*
+image styling, so it wont take up the whole page
+*/
+img {
+    max-width: 100%;
+    height: auto;
+}
