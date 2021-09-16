@@ -95,6 +95,6 @@ td.title {
 image styling, so it wont take up the whole page
 */
 img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
 }
