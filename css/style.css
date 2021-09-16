@@ -1,0 +1,86 @@
+/*
+For the header, makes it italicised, black, and centered horizontally
+*/
+h1.a {
+    font-style: italic;
+    color: black;
+    text-align: center;
+}
+
+/*
+uses an image from the "images" folder as the background
+centers the image and covers it, also non-repeating
+*/
+body {
+    background-image: url("../images/IMG_20210817_142904.jpg");
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*
+styling for the buttons at the top of the page
+*/
+input.styled {
+    background-color: skyblue;
+    text-align: center;
+    padding: 10px 10%;
+    border: none;
+}
+input.styled:hover {
+    background-color: rgb(128, 198, 255);
+    border: none;
+}
+input.styled:active {
+    background-color: rgb(103, 141, 255);
+    border: none;
+}
+input.position1 {
+    position: sticky;
+    left:0%;
+}
+input.position2 {
+    position: sticky;
+    left:25%;
+}
+input.position3 {
+    position: sticky;
+    left:50%;
+}
+input.position4 {
+    position: sticky;
+    left:75%;
+}
+
+/*
+Green background for easier reading
+*/
+p.interesting {
+    background-color: rgb(46, 139, 87, 0.50);
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+/*
+applies the colored borders for the table
+*/
+table, th{
+    width: 100%;
+    border: 2px solid red;
+}
+
+td {
+    border: 2px solid orange;
+    color: white;
+    opacity: 1;
+}
+/*
+makes the table name colorful
+https://w3bits.com/rainbow-text/
+*/
+p.t {
+    background-image: linear-gradient(red, purple, orange); -webkit-background-clip: text;
+    color: transparent;
+}
