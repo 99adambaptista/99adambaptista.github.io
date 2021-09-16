@@ -36,6 +36,9 @@ input.styled:active {
     background-color: rgb(103, 141, 255);
     border: none;
 }
+/*
+Positioning so it is equally divided across the top of the page
+*/
 input.position1 {
     position: sticky;
     left:0%;
@@ -71,6 +74,7 @@ p.dellimg {
 
 /*
 applies the colored borders for the table
+and opacity to make it look nice
 */
 table, th{
     background-color: rgba(255, 255, 255, 0.7);
@@ -92,7 +96,7 @@ td.title {
 }
 
 /*
-image styling, so it wont take up the whole page
+image styling, so it wont take up the whole page, just the inside of the table
 */
 img {
     max-width: 100%;
