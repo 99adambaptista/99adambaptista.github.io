@@ -19,6 +19,10 @@ body {
     background-repeat: no-repeat;
 }
 
+h2 {
+    text-align: center;
+}
+
 /*
 styling for the buttons at the top of the page
 */
@@ -79,13 +83,14 @@ and opacity to make it look nice
 table, th{
     background-color: rgba(255, 255, 255, 0.7);
     width: 26%;
-    border: 2px solid red;
+    border: 2px solid rgb(0, 183, 255);
     position: sticky;
     left: 37%;
+    text-align: center;
 }
 
 td {
-    border: 2px solid orange;
+    border: 2px solid rgb(0, 255, 170);
     color: rgb(0, 0, 0);
     opacity: 1;
 }
@@ -100,5 +105,10 @@ image styling, so it wont take up the whole page, just the inside of the table
 */
 img {
     max-width: 100%;
+    height: auto;
+}
+
+img.in {
+    max-width: 5%;
     height: auto;
 }
