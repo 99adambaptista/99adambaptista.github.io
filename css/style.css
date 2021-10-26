@@ -1,4 +1,13 @@
 /*
+    Adam Baptista
+    10/25/2021
+
+    Style page for index.html
+
+*/
+
+
+/*
 For the header, makes it italicised, black, and centered horizontally
 */
 h1.a {
@@ -21,6 +30,7 @@ body {
 
 h2 {
     text-align: center;
+    margin-top: 5%;
 }
 
 /*
@@ -111,4 +121,28 @@ img {
 img.in {
     max-width: 5%;
     height: auto;
+}
+
+#linkedin {
+    text-align: right;
+}
+
+/*
+redirect for the dynamic table page
+*/
+#table_redirect {
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: skyblue;
+    margin-left: 20px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    position: sticky;
+    left:0%;
+}
+
+#table_redirect:hover {
+    background-color: lightcyan;
 }

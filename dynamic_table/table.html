@@ -1,0 +1,51 @@
+<!--
+    Adam Baptista
+    10/25/2021
+
+    My second webpage using JS to create a dynamic multiplication table based on
+    the users input from -50 to 50
+
+    Only used w3 schools for styling
+
+    Passed css and html validators
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dynamic Table</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="div_home">
+        <a id="home" href="../index.html">Home</a>
+    </div>
+
+    <form id="table_param">
+        <label>Width: </label>
+        <input id="s_width" type="number" min=-50 max=50 placeholder="Start">
+        <input id="e_width" type="number" min=-50 max=50 placeholder="End">
+        <br>
+        <label>Height: </label>
+        <input id="s_height" type="number" min=-50 max=50 placeholder="Start">
+        <input id="e_height" type="number" min=-50 max=50 placeholder="End">
+        <br>
+        <button type="button" onclick="gen_table()">Create</button>
+    </form>
+
+    <div id="dynamic_table"></div>
+
+    <p id="validator">
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!" />
+        </a>
+    </p>
+</body>
+
+</html>
