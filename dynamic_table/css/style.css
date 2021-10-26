@@ -25,6 +25,11 @@ body {
     color: black;
 }
 
+#home:hover {
+    background-color: lightsteelblue;
+}
+
+
 /*
 input styling
 */
@@ -50,6 +55,7 @@ input:hover {
     background-color: lightcyan;
 }
 
+
 /*
 button styling to make it look nice
 */
@@ -67,6 +73,7 @@ button:hover {
 button:active {
     background-color: steelblue
 }
+
 
 /*
 table stying
@@ -97,6 +104,7 @@ tr {
     border-radius: 1px;
 }
 
+
 /*
 every other not including the first child
 */
@@ -104,6 +112,7 @@ every other not including the first child
 tr:nth-child(2n+3) {
     background-color: lightskyblue;
 }
+
 
 /*
 Styling for the first column header
@@ -115,6 +124,7 @@ th:first-child {
     border-radius: 1px;
 }
 
+
 /*
 Styling for the first row header
 */
@@ -124,6 +134,7 @@ tr:first-child {
     color: white;
     border-radius: 1px;
 }
+
 
 /*
 Error message styling
