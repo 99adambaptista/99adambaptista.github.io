@@ -5,7 +5,6 @@
     Styling file for table.html
 */
 
-
 body {
     padding-top: 30px;
     background-color: skyblue;
@@ -29,6 +28,7 @@ body {
 /*
 input styling
 */
+
 form {
     border: 1px solid black;
     border-radius: 5px;
@@ -53,6 +53,7 @@ input:hover {
 /*
 button styling to make it look nice
 */
+
 button {
     text-align: center;
     background-color: lightskyblue;
@@ -70,10 +71,12 @@ button:active {
 /*
 table stying
 */
+
 #dynamic_table {
     max-width: 500px;
     max-height: 400px;
-    overflow: auto; /*allows for scrolling when it goes past the max width and height*/
+    overflow: auto;
+    /*allows for scrolling when it goes past the max width and height*/
     display: block;
     margin: auto;
     margin-top: 20px;
@@ -97,6 +100,7 @@ tr {
 /*
 every other not including the first child
 */
+
 tr:nth-child(2n+3) {
     background-color: lightskyblue;
 }
@@ -104,6 +108,7 @@ tr:nth-child(2n+3) {
 /*
 Styling for the first column header
 */
+
 th:first-child {
     background-color: black;
     color: white;
@@ -113,6 +118,7 @@ th:first-child {
 /*
 Styling for the first row header
 */
+
 tr:first-child {
     background-color: black;
     color: white;
@@ -122,6 +128,7 @@ tr:first-child {
 /*
 Error message styling
 */
+
 em {
     color: red;
 }

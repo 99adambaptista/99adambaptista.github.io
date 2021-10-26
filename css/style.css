@@ -6,10 +6,10 @@
 
 */
 
-
 /*
 For the header, makes it italicised, black, and centered horizontally
 */
+
 h1.a {
     font-style: italic;
     color: black;
@@ -20,6 +20,7 @@ h1.a {
 uses an image from the "images" folder as the background
 centers the image and covers it, also non-repeating
 */
+
 body {
     background-image: url("../images/IMG_20210817_142904.jpg");
     background-color: black;
@@ -36,43 +37,52 @@ h2 {
 /*
 styling for the buttons at the top of the page
 */
+
 input.styled {
     background-color: skyblue;
     text-align: center;
     padding: 10px 10%;
     border: none;
 }
+
 input.styled:hover {
     background-color: rgb(128, 198, 255);
     border: none;
 }
+
 input.styled:active {
     background-color: rgb(103, 141, 255);
     border: none;
 }
+
 /*
 Positioning so it is equally divided across the top of the page
 */
+
 input.position1 {
     position: sticky;
-    left:0%;
+    left: 0%;
 }
+
 input.position2 {
     position: sticky;
-    left:25%;
+    left: 25%;
 }
+
 input.position3 {
     position: sticky;
-    left:50%;
+    left: 50%;
 }
+
 input.position4 {
     position: sticky;
-    left:75%;
+    left: 75%;
 }
 
 /*
 Green background for easier reading
 */
+
 p.interesting {
     background-color: rgb(46, 139, 87, 0.50);
     border-width: 2px;
@@ -90,7 +100,8 @@ p.dellimg {
 applies the colored borders for the table
 and opacity to make it look nice
 */
-table, th{
+
+table, th {
     background-color: rgba(255, 255, 255, 0.7);
     width: 26%;
     border: 2px solid rgb(0, 183, 255);
@@ -113,6 +124,7 @@ td.title {
 /*
 image styling, so it wont take up the whole page, just the inside of the table
 */
+
 img {
     max-width: 100%;
     height: auto;
@@ -130,6 +142,7 @@ img.in {
 /*
 redirect for the dynamic table page
 */
+
 #table_redirect {
     padding: 10px;
     font-weight: bolder;
@@ -140,7 +153,7 @@ redirect for the dynamic table page
     text-decoration: none;
     color: black;
     position: sticky;
-    left:0%;
+    left: 0%;
 }
 
 #table_redirect:hover {

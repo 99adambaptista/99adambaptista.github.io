@@ -52,10 +52,10 @@ function gen_table() {
         for (var i = sH; i <= eH; i++) {
             //This line is for the second header in the first column
             table += "<tr><th>" + i + "</th>";
-            
+
             //math for the multiplication table
             for (var j = sW; j <= eW; j++) {
-                table += "<th>" + i*j + "</th>";
+                table += "<th>" + i * j + "</th>";
             }
             table += "</tr>";
         }
