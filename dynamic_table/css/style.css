@@ -122,6 +122,8 @@ th:first-child {
     background-color: black;
     color: white;
     border-radius: 1px;
+    position: sticky;
+    left: 0;
 }
 
 
@@ -133,6 +135,8 @@ tr:first-child {
     background-color: black;
     color: white;
     border-radius: 1px;
+    position: sticky;
+    top: 0;
 }
 
 
