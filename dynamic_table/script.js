@@ -43,7 +43,7 @@ function gen_table() {
         /*
         first loop is for the top row header
         */
-        table = "<table><tr><th>x</th>";
+        table = "<table><tr><th id='x'>x</th>";
         for (var i = sW; i <= eW; i++) {
             table += "<th>" + i + "</th>";
         }
