@@ -12,24 +12,20 @@ body {
 }
 
 .table_form {
-    display: block;
     position: fixed;
     height: 80%;
     width: 20%;
-    min-width: 200px;
     top: 20%;
     left: 0;
     border-right: 2px solid steelblue;
 }
 
-#table_output {
-    display: block;
+.table_output {
     position: fixed;
     height: 80%;
     width: 80%;
     top: 20%;
     right: 0;
-    overflow: auto;
 }
 
 #home {
@@ -60,7 +56,7 @@ form .error {
     display: inline-block;
 }
 
-.param {
+input {
     box-sizing: border-box;
     border: 1px solid steelblue;
     background-color: lightskyblue;
@@ -72,13 +68,8 @@ form .error {
     margin: 10px;
 }
 
-.param:hover {
+input:hover {
     background-color: lightcyan;
-}
-
-.jqSlider {
-    margin: auto;
-    width: 60%;
 }
 
 
@@ -88,8 +79,8 @@ Styling to remove input number arrows
 
  Chrome, Safari, Edge, Opera */
 
-.param::-webkit-outer-spin-button,
-.param::-webkit-inner-spin-button {
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
@@ -97,11 +88,11 @@ Styling to remove input number arrows
 
 /* Firefox */
 
-.param[type=number] {
+input[type=number] {
     -moz-appearance: textfield;
 }
 
-._button {
+button {
     text-align: center;
     background-color: lightskyblue;
     border: 1px solid steelblue;
@@ -111,26 +102,27 @@ Styling to remove input number arrows
     margin: 10px;
 }
 
-._button:hover {
+button:hover {
     background-color: lightcyan;
 }
 
-._button:active {
+button:active {
     background-color: steelblue
 }
 
-.tab {
+#dynamic_table {
     max-width: 700px;
     max-height: 600px;
     /*allows for scrolling when it goes past the max width and height*/
-    overflow: scroll;
+    overflow: auto;
+    display: flexbox;
     margin: auto;
+    margin-top: 100px;
+    text-align: center;
     align-items: stretch;
-    margin-top: 50px;
 }
 
 table {
-    overflow: scroll;
     border: black solid;
     background-color: grey;
     border-radius: 2px;
@@ -210,7 +202,7 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
 /* Track */
 
 ::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: #f1f1f1;
 }
 
 
@@ -225,20 +217,4 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
-}
-
-ul {
-    position: relative;
-    padding-top: 0;
-}
-
-#check {
-    display: inline-flex;
-    right: 0;
-    margin: auto 0 0 0;
-    padding: 0;
-}
-
-.bDel {
-    background-color: red;
 }

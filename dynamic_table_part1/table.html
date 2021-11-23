@@ -1,0 +1,58 @@
+<!--
+    Adam Baptista
+    10/25/2021
+
+    My second webpage using JS to create a dynamic multiplication table based on
+    the users input from -50 to 50
+
+    Only used w3 schools for styling
+
+    Passed css and html validators
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dynamic Table</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="home" id="div_home">
+        <a id="home" href="../index.html">Home</a>
+    </div>
+
+    <div class="table_form" id="table_form">
+        <form name="table_param">
+            <label>Width: </label> <br>
+            <input name="s_width" id="s_width" type="number" min=-50 max=50 placeholder="Start"> <br>
+            <!-- <input id="sw_slider" type="range" min=-50 max=50 value=0> <br> -->
+            <input name="e_width" id="e_width" type="number" min=-50 max=50 placeholder="End"> <br>
+            <!-- <input id="ew_slider" type="range" min=-50 max=50 value=0> <br> -->
+            <label>Height: </label> <br>
+            <input name="s_height" id="s_height" type="number" min=-50 max=50 placeholder="Start"> <br>
+            <!-- <input id="sh_slider" type="range" min=-50 max=50 value=0> <br> -->
+            <input name="e_height" id="e_height" type="number" min=-50 max=50 placeholder="End"> <br>
+            <!-- <input id="eh_slider" type="range" min=-50 max=50 value=0> <br> -->
+            <button type="button">Create</button>
+        </form>
+    </div>
+
+    <div class="table_output">
+        <div id="dynamic_table"></div>
+    </div>
+
+    <p id="validator">
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+        </a>
+    </p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
