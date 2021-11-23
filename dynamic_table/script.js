@@ -62,6 +62,7 @@ $(function() {
         value: 0,
         slide: function(event, ui) { //When sliding the toggle
             updateInputFromSlider("#s_width", $(this).slider("value"));
+            //will jump to "dynamic table" tab when changes are made
             $("#table_output").tabs({ active: 0 });
         },
         //added change so that table only updates on mouse up on slider, makes my laptop slow with updates on slide
