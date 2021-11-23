@@ -62,10 +62,12 @@ $(function() {
         value: 0,
         slide: function(event, ui) { //When sliding the toggle
             updateInputFromSlider("#s_width", $(this).slider("value"));
+            $("#table_output").tabs({ active: 0 });
         },
         //added change so that table only updates on mouse up on slider, makes my laptop slow with updates on slide
         change: function(event, ui) { //When releasing the toggle
             updateInputFromSlider("#s_width", $(this).slider("value"));
+            $("#table_output").tabs({ active: 0 });
             if ($("form[name='table_param']").valid()) {
                 draw_table(create_table());
             }
@@ -78,9 +80,11 @@ $(function() {
         value: 0,
         slide: function(event, ui) {
             updateInputFromSlider("#e_width", $(this).slider("value"));
+            $("#table_output").tabs({ active: 0 });
         },
         change: function(event, ui) {
             updateInputFromSlider("#e_width", $(this).slider("value"));
+            $("#table_output").tabs({ active: 0 });
             if ($("form[name='table_param']").valid()) {
                 draw_table(create_table());
             }
@@ -93,9 +97,11 @@ $(function() {
         value: 0,
         slide: function(event, ui) {
             updateInputFromSlider("#s_height", $(this).slider("value"));
+            $("#table_output").tabs({ active: 0 });
         },
         change: function(event, ui) {
             updateInputFromSlider("#s_height", $(this).slider("value"));
+            $("#table_output").tabs({ active: 0 });
             if ($("form[name='table_param']").valid()) {
                 draw_table(create_table());
             }
@@ -108,9 +114,11 @@ $(function() {
         value: 0,
         slide: function(event, ui) {
             updateInputFromSlider("#e_height", $(this).slider("value"));
+            $("#table_output").tabs({ active: 0 });
         },
         change: function(event, ui) {
             updateInputFromSlider("#e_height", $(this).slider("value"));
+            $("#table_output").tabs({ active: 0 });
             if ($("form[name='table_param']").valid()) {
                 draw_table(create_table());
             }
@@ -123,7 +131,7 @@ $(function() {
         if ($("form[name='table_param']").valid()) {
             draw_table(create_table());
         }
-        $("#table_output").tabs("option", "active", 1);
+        $("#table_output").tabs({ active: 0 });
     });
 
     //init tabs
