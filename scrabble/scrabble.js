@@ -309,9 +309,9 @@ function check_if_word_exists(word) {
         }
     });
 
-    console.log(result);
+    console.log(dict);
 
-    return result;
+    return dict;
 }
 
 console.log(check_if_word_exists("word").status);
