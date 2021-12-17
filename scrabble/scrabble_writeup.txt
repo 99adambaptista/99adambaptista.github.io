@@ -1,0 +1,12 @@
+    Dragging partially works, only one way though. Dragging onto the board is 
+possible, but removing tiles from the board back to the table is not possible.
+I had a bunch of trouble trying to get the dictionary working. At first I tried
+to use a dictionary JSON, but my browser kept giving me an error saying that it
+was a sercurity risk to read the file. I then tried to use ajax to get it from
+an online dictionary, similar to how Yong Cho did in the example in the PDF, 
+but I could not read the data from the response. When I tried to return the 
+status code from the ajax get, it would always return as undefined so I just
+gave up in the end. Tiles can also be placed anywhere on the board, but the
+board wont allow for submissions of the word if there are any spaces inbetween
+letters.
+    Everything else works as intended.

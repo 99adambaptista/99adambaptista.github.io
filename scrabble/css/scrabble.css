@@ -1,0 +1,56 @@
+/*
+Adam Baptista
+HW5
+
+12/16/2021
+https://github.com/99adambaptista
+*/
+
+.board {
+    position: relative;
+    list-style-type: none;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: 33px;
+    overflow-x: hidden;
+    height: max-content;
+    z-index: -1;
+}
+
+.letters {
+    position: relative;
+    list-style-type: none;
+    background-repeat: no-repeat;
+    background-size: auto;
+    overflow-x: hidden;
+    height: max-content;
+}
+
+#board {
+    position: relative;
+    z-index: -1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#letters {
+    display: table;
+    table-layout: fixed;
+}
+
+#letters li {
+    display: block;
+    display: table-cell;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: visible;
+}

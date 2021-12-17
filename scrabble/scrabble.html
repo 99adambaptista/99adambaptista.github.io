@@ -1,0 +1,46 @@
+<!--
+Adam Baptista
+HW5
+
+12/16/2021
+https://github.com/99adambaptista
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Scrabble</title>
+    <link rel="stylesheet" href="css/scrabble.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js" integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA=" crossorigin="anonymous"></script>
+    <script src="scrabble.js"></script>
+</head>
+
+<body>
+    <!--Displays the points and remaining letters-->
+    <div id="points">
+        <div>Last word: <label id="word"></label></div>
+        <div>Score: <label id="total_score"></label></div>
+        <div>Remaining letters: <label id="remaining_letters"></label></div>
+    </div>
+
+
+
+    <div class="letters">
+        <div class="board">
+            <ul id="board"></ul>
+        </div>
+        <ul id="letters"></ul>
+    </div>
+
+    <div>
+        <input class="reset" type="button" value="Reset">
+        <input class="enter" type="button" value="Enter">
+    </div>
+
+</body>
+
+</html>
