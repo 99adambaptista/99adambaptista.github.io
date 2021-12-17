@@ -4,6 +4,12 @@ HW5
 
 12/16/2021
 https://github.com/99adambaptista
+
+refrences:
+https://jqueryui.com/
+http://yongcho.github.io/GUI-Programming-1/assignment9.html
+
+other sources included as comments before related code
 */
 
 "use strict";
@@ -293,18 +299,17 @@ check_if_word_exists() from
 https://www.codegrepper.com/code-examples/javascript/check+if+a+word+exists+in+dictionary+javascript
 */
 function check_if_word_exists(word) {
-    const url = "https://api.wordnik.com/v4/word.json/" + word + "/definitions?limit=200&includeRelated=false&useCanonical=false&includeTags=false&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5";
+    const url = "dictionary.json";
 
-    var result = 1;
-    result = $.ajax({
-        type: "GET",
-        url: url
+    var dict = 1;
+    $.ajax({
+        url: url,
+        success: function(result) {
+            dict = result;
+        }
     });
 
     console.log(result);
 
     return result;
 }
-
-check_if_word_exists("word");
-check_if_word_exists("asdker");
