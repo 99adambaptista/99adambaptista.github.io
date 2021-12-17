@@ -313,3 +313,6 @@ function check_if_word_exists(word) {
 
     return result;
 }
+
+console.log(check_if_word_exists("word").status);
+console.log(check_if_word_exists("asdker").status);
