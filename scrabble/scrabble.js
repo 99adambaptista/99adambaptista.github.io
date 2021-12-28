@@ -292,7 +292,7 @@ set id to letter, value by looking at data.pieces.value and img by image
 /*
 check_if_word_exists() from 
 https://www.codegrepper.com/code-examples/javascript/check+if+a+word+exists+in+dictionary+javascript
-*/
+
 function check_if_word_exists(word) {
     const url = "dictionary.json";
 
@@ -307,7 +307,7 @@ function check_if_word_exists(word) {
     console.log(dict);
 
     return dict;
-}
+}*/
 
 console.log(check_if_word_exists("word").status);
 console.log(check_if_word_exists("asdker").status);
