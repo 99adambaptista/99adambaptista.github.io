@@ -191,41 +191,36 @@ $(function() {
             //dont allow 1 letter words because scrabble rules
             if (check_word.length > 1) {
                 check_word = check_word.toLowerCase();
-                if (check_if_word_exists(check_word).status != 404) {
-                    SCORE = 0;
-                    for (var i in check_word) {
-                        //letter value
-                        var val = data.pieces[letter_index[check_word[i].toUpperCase()]].value;
-                        if (i == 1 || i == 5) {
-                            SCORE += 2 * val;
-                        } else {
-                            SCORE += val;
-                        }
+                SCORE = 0;
+                for (var i in check_word) {
+                    //letter value
+                    var val = data.pieces[letter_index[check_word[i].toUpperCase()]].value;
+                    if (i == 1 || i == 5) {
+                        SCORE += 2 * val;
+                    } else {
+                        SCORE += val;
                     }
-                    TOTAL_SCORE += SCORE;
-                    SCORE = 0;
-                    $("#total_score").html(TOTAL_SCORE);
-                    //$("#letters").html(gen_table());
-                    $(".tile .letter").remove();
-                    var remaining = 0;
-                    $(".ui-draggable").each(function() {
-                        var letter = $(this).attr("class").split(" ");
-                        remaining += 1;
-                    });
-                    $("#letters").append(gen_table(7 - remaining));
-                    //add css styling for dragging and letters etc
-                    style_letters();
-                    //reset disabled droppable li elements
-                    $(".tile").droppable("enable");
-                    $("#word").html(WORD);
-                    //reset WORD variable
-                    WORD = [".", ".", ".", ".", ".", ".", "."];
-                    $("#total_score").html(TOTAL_SCORE);
-                    $("#remaining_letters").html(REMAINING_LETTERS);
-
-                } else {
-                    console.log("error");
                 }
+                TOTAL_SCORE += SCORE;
+                SCORE = 0;
+                $("#total_score").html(TOTAL_SCORE);
+                //$("#letters").html(gen_table());
+                $(".tile .letter").remove();
+                var remaining = 0;
+                $(".ui-draggable").each(function() {
+                    var letter = $(this).attr("class").split(" ");
+                    remaining += 1;
+                });
+                $("#letters").append(gen_table(7 - remaining));
+                //add css styling for dragging and letters etc
+                style_letters();
+                //reset disabled droppable li elements
+                $(".tile").droppable("enable");
+                $("#word").html(WORD);
+                //reset WORD variable
+                WORD = [".", ".", ".", ".", ".", ".", "."];
+                $("#total_score").html(TOTAL_SCORE);
+                $("#remaining_letters").html(REMAINING_LETTERS);
             }
         }
     });
